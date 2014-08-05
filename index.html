@@ -1,10 +1,155 @@
 <!doctype html>
-<html>
+<html lang='en'>
 <head>
-<title>Multiligual Nurse</title>
-<link href="/css/bootstrap.min.css" rel="stylesheet">
-<link href="/css/flags.css" rel="stylesheet">
-</head>
-<body>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Multiligual Nurse</title>
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    
+</head>
+
+<body>
+	<script>
+	var ddData = [
+    {
+        text: "English / English",
+        value: "english",
+        selected: true,
+    },
+    {
+        text: "German / Deutsch",
+        value: "german",
+        selected: false,
+    },
+    {
+        text: "Spanish / Español",
+        value: "spanish",
+        selected: false,
+    },
+    {
+        text: "French / Français",
+        value: "french",
+        selected: false,
+    },
+    {
+        text: "Chinese / 中国的",
+        value: "chinese",
+        selected: false,
+    },
+	{
+        text: "Vietminese / Việt",
+        value: "viet",
+        selected: false,
+    },
+    {
+        text: "Arabic / العربية",
+        value: "arabic",
+        selected: false,
+    },
+];
+	</script>
+
+	<div class='jumbotron'>
+		<div class='container'>
+			<h3>Help lower the language barrier with your patients.</h3>
+<!-- Saying at top, how are you feeling? -->
+			<div class='row'>
+				<div class='col-md-2'>
+				<!-- Split button -->
+					<div id='left'></div>
+				</div>
+
+				<div class='col-md-1'>
+					<span class="glyphicon glyphicon-chevron-left"></span><span class="glyphicon glyphicon-chevron-right"></span>
+				</div>
+
+				<div class='col-md-2'>
+					<div id='right'></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class='container'>
+		<div class='row'>
+			Here be ads
+		</div>
+
+		<div class='row'>
+			<button type="button" class='btn btn-success' id='download'>Download Sheet</button>
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.ddslick.min.js'></script>
+
+	<script>
+	function fileExists(url)
+	{
+		$.ajax({
+        type: "HEAD",
+        async: true,
+        url: url,
+        success: function(message,text,response){
+            return true;
+        }
+    });
+
+		return false;
+	}
+
+	function fileComp(left, right) {
+		return "./pdf/" + left + "_" + right + ".pdf";
+	}
+
+	function eitherOr(left, right) {
+		if(fileExists(fileComp(left, right))) {
+			return fileComp(left, right);
+		} else {
+			return fileComp(right, left);
+		}
+	}
+
+	$('#download').click(function() {
+		// l = $('#left').data('ddslick').selectedData().val();
+		// r = $('#right').data('ddslick').selectedData().val();
+		alert('l');
+	});
+	</script>
+
+	<script>
+		$('#left').ddslick({
+		    data: ddData,
+		    width: 175,
+		    selectText: "Select language",
+		    onSelected: function (data) {
+		        console.log("Moo" + data);
+		    }
+		});
+
+		$('#right').ddslick({
+		    data: ddData,
+		    width: 175,
+		    selectText: "Select language",
+		    onSelected: function (data) {
+		        console.log("Moo 1" + data);
+		    }
+		});
+	</script>
 </body>
+</html>

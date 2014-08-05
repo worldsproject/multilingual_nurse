@@ -1,0 +1,7 @@
+Point to how you are feeling.
+I am hungry.
+I am thirsty.
+I am tired.
+I am in pain.
+I am not feeling well.
+I need to go to the bathroom.
