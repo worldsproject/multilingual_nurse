@@ -12,8 +12,8 @@ def create_job(text, lang, tier='standard'):
 
 if __name__ == "__main__":
 
-	PUBLIC_KEY = "Erk$czrPE)XMNqq{@[RF5E83xtpUH^c=V=g2vMtYTIK7{5etoyEccCpnh@Fd_wHQ"
-	PRIVATE_KEY = "5gd{Di8w8)iJv{8ZFvR~kmZ2vhd4}W}uUOJ~J2}eHhhmbT(Zuq2@BheZlv}C@l5~"
+	PUBLIC_KEY = ""
+	PRIVATE_KEY = ""
 	URL = 'http://api.gengo.com/v2/translate/jobs'
 
 	RESPONSE_TYPE = 'json'

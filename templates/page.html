@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<title>Multilingual Nurse</title>
 </head>
 
 <body>
@@ -29,6 +30,17 @@
 	</nav>
 
 	<div class='container center-block' style="text-align:center;">
+		<div class='row' id='ad'>
+	        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	        <!-- MultilingualNurse -->
+	        <ins class="adsbygoogle"
+	            style="display:inline-block;width:728px;height:90px"
+	            data-ad-client="ca-pub-8286765364417652"
+	            data-ad-slot="9668264910"></ins>
+	        <script>
+	            (adsbygoogle = window.adsbygoogle || []).push({});
+	        </script>
+    	</div>
 		<div class='row'>
 			<h1>{{ left_header }}</h1>
 		</div>
@@ -104,9 +116,12 @@
 	<script>
 		function printPage() {
 			var nav = document.getElementById('nav');
+			var ad = document.getElementById('ad');
 			nav.style.display = "none";
+			ad.style.display = "none";
 			window.print();
 			nav.style.display = "block";
+			ad.style.display = "block";
 		}
 	</script>
 </body>
