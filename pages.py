@@ -27,6 +27,7 @@ def render_from_content(left, right):
 	l_pain = left[4]
 	l_feeling = left[5]
 	l_bathroom = left[6]
+	l_translator = left[7]
 	
 	r_header = right[0]
 	r_hungry = right[1]
@@ -35,6 +36,7 @@ def render_from_content(left, right):
 	r_pain = right[4]
 	r_feeling = right[5]
 	r_bathroom = right[6]
+	r_translator = right[7]
 	
 	template = env.get_template('page.html')
 	
@@ -44,7 +46,8 @@ def render_from_content(left, right):
 		left_tired=l_tired, right_tired=r_tired,
 		left_pain=l_pain, right_pain=r_pain,
 		left_feeling=l_feeling, right_feeling=r_feeling,
-		left_bathroom=l_bathroom, right_bathroom=r_bathroom)
+		left_bathroom=l_bathroom, right_bathroom=r_bathroom,
+		left_translator=l_translator, right_translator=r_translator)
 		
 for x in combs:
 	if(x[0] < x[1]):
