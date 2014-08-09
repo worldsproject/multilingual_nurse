@@ -1,7 +1,8 @@
-Chỉ để làm thế nào bạn cảm thấy. 
-Tôi đói. 
-Tôi khát. 
-Tôi mệt. 
-Tôi đau đớn.
-Tôi không cảm thấy tốt.
-Tôi cần phải đi đến phòng tắm.
+Chỉ vào điều mà bạn đang cảm giác thấy.
+Tôi đang đói.
+Tôi đang khát.
+Tôi đang mệt.
+Tôi đang bị đau.
+Tôi cảm thấy không khỏe.
+Tôi cần phải đi vệ sinh.
+Tôi cần một người phiên dịch.

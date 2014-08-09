@@ -1,7 +1,8 @@
-Zeigen Sie, wie Sie sich fühlen. 
+Zeige an, wie Du Dich fühlst.
 Ich bin hungrig.
 Ich bin durstig.
 Ich bin müde.
 Ich habe Schmerzen.
-Ich fühle mich nicht gut. 
-Ich muss mal aufs Klo.
+Ich fühle mich schlecht.
+Ich muss zur Toilette gehen.
+Ich brauche einen Übersetzer.

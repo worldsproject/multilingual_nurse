@@ -12,9 +12,9 @@ def create_job(text, lang, tier='standard'):
 
 if __name__ == "__main__":
 
-	PUBLIC_KEY = "}EPLC$}mzl(6eu8VO=Csw1B$ErOlntx4tEu6P$^_Wz9}S0TNlmlxd=~VVl-ot8Ht"
-	PRIVATE_KEY = ")s$1RJcSlaBOr~j7{Rda7SmObWt{5tdT$ncRLh{vMuwMd1plP}Ys]yDyus)vyEtJ"
-	URL = 'http://api.sandbox.gengo.com/v2/translate/jobs'
+	PUBLIC_KEY = "Erk$czrPE)XMNqq{@[RF5E83xtpUH^c=V=g2vMtYTIK7{5etoyEccCpnh@Fd_wHQ"
+	PRIVATE_KEY = "5gd{Di8w8)iJv{8ZFvR~kmZ2vhd4}W}uUOJ~J2}eHhhmbT(Zuq2@BheZlv}C@l5~"
+	URL = 'http://api.gengo.com/v2/translate/jobs'
 
 	RESPONSE_TYPE = 'json'
 
@@ -31,7 +31,7 @@ if __name__ == "__main__":
 	data["api_sig"] = hmac.new(data["api_sig"].encode(), data["ts"].encode(), sha1).hexdigest()
 	
 	languages = {'de', 'es', 'fr', 'ar', 'zh', 'vi'}
-	text = 'Point to how you are feeling. I am hungry. I am thirsty. I am tired. I am in pain. I am not feeling well. I need to go to the bathroom.'
+	text = 'Point to how you are feeling.\nI am hungry.\nI am thirsty.\nI am tired.\nI am in pain.\nI am not feeling well.\nI need to go to the bathroom.\nI need a translator.'
 	
 	job_count = 1
 	

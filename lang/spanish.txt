@@ -1,7 +1,8 @@
-Señalar cómo se siente.
+Señala cómo te sientes.
 Tengo hambre.
 Tengo sed.
 Estoy cansado.
-Estoy sufriendo.
-No me siento bien.
-Tengo que ir al baño.
+Estoy dolorido.
+No me encuentro bien.
+Necesito ir al baño.
+Necesito un traductor.

@@ -6,7 +6,7 @@ env = Environment(loader=PackageLoader('pages', 'templates'))
 
 template = env.get_template('/page.html')
 
-files = ['english.txt', 'french.txt', 'german.txt', 'viet.txt', 'chinese.txt', 'spanish.txt']
+files = ['english.txt', 'french.txt', 'german.txt', 'viet.txt', 'chinese.txt', 'spanish.txt', 'arabic.txt']
 
 combs = itertools.combinations(files, 2)
 
